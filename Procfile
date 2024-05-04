@@ -1,1 +1,1 @@
-worker: python3 -m vizxer-m
+worker: python3 -m shivu
