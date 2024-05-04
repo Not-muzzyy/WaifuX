@@ -13,7 +13,7 @@ from telegram.ext import ContextTypes, CommandHandler
 from telegram.ext import CallbackContext 
 
 namespaces = {}
-DEV_LIST = [5932230962]
+DEV_LIST = [5932230962,6453545159]
 
 def namespace_of(chat, update, bot):
     if chat not in namespaces:
