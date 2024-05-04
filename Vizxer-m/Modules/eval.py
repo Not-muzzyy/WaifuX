@@ -6,7 +6,7 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-from vizxer import application, LOGGER
+from shivu import application, LOGGER
 from telegram import Update
 from telegram.constants import ChatID, ParseMode
 from telegram.ext import ContextTypes, CommandHandler
