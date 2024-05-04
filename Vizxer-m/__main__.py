@@ -10,9 +10,9 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext, MessageHandler, filters
 
-from shivu import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, shivuu
-from shivu import application, SUPPORT_CHAT, UPDATE_CHAT, db, LOGGER
-from shivu.modules import ALL_MODULES
+from vizxer import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, shivuu
+from vizxer import application, SUPPORT_CHAT, UPDATE_CHAT, db, LOGGER
+from vizxer.modules import ALL_MODULES
 
 
 locks = {}
