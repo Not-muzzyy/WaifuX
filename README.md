@@ -17,18 +17,20 @@ use Rarity Number accordingly rarity Map
 
 | Number | Rarity     |
 | ------ | -----------|
-| 1 | ⚪️ Common   |
-| 2 | 🟣 Rare     |
-| 3 | 🟡 Legendary|
-| 4 | 🟢 Medium   |
-
+| 1 | 💎 Exiotic|
+| 2 | 🎴 Mythic|
+| 3 | 🏵️ Legendary|
+| 4 | 🔮 Epic|
+| 5 | 🧿 Rare|
+| 6 | 🟢 Uncommon|
+| 7 | 🔘 Common|
 
 ## USER COMMANDS
-- `/guess` - Guess the character
+- `/attain` - Guess the character
 - `/fav` - Add a character to favorites
 - `/trade` - Trade a character with another user
 - `/gift` - Gift a character to another user
-- `/collection` - Boast your harem collection
+- `/harem` - Boast your harem collection
 - `/topgroups` - List the groups with biggest harem (globally)
 - `/top` - List the users with biggest harem (globally)
 - `/ctop` - List the users with biggest harem (current chat)
