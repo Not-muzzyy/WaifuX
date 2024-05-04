@@ -17,13 +17,13 @@ use Rarity Number accordingly rarity Map
 
 | Number | Rarity     |
 | ------ | -----------|
-| 1 | 💎 Exiotic|
-| 2 | 🎴 Mythic|
-| 3 | 🏵️ Legendary|
+| 7 | 💎 Exiotic|
+| 6 | 🎴 Mythic|
+| 5 | 🏵️ Legendary|
 | 4 | 🔮 Epic|
-| 5 | 🧿 Rare|
-| 6 | 🟢 Uncommon|
-| 7 | 🔘 Common|
+| 3 | 🧿 Rare|
+| 2 | 🟢 Uncommon|
+| 1 | 🔘 Common|
 
 ## USER COMMANDS
 - `/attain` - Guess the character
