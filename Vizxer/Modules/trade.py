@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from Vizxer-m import user_collection, vizxerrr
+from Vizxer import user_collection, vizxerrr
 
 pending_trades = {}
 
