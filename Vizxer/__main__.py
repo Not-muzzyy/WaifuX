@@ -25,7 +25,7 @@ message_counts = {}
 
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("vizxer.Modules." + module_name)
+    imported_module = importlib.import_module("Vizxer.Modules." + module_name)
 
 
 last_user = {}
