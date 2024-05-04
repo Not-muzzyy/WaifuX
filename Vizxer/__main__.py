@@ -12,7 +12,7 @@ from telegram.ext import CommandHandler, CallbackContext, MessageHandler, filter
 
 from Vizxer import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, shivuu
 from Vizxer import application, SUPPORT_CHAT, UPDATE_CHAT, db, LOGGER
-from Vizxer.modules import ALL_MODULES
+from Vizxer.Modules import ALL_MODULES
 
 
 locks = {}
