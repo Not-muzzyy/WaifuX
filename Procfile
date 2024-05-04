@@ -1,1 +1,1 @@
-worker: python3 -m Vizxer-m
+worker: python3 -m Vizxer
