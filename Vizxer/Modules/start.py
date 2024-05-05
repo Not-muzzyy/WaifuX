@@ -34,17 +34,23 @@ async def start(update: Update, context: CallbackContext) -> None:
         
         
         caption = f"""
-        ***Heyyyy...***
+        🦋 ɢʀᴇᴇᴛɪɴɢs (name) , ɪ'ᴍ {BOT_NAME} , ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ!💞
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+⌥ ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ ? 🤔
+▸ ɪ ᴄᴀɴ sᴘᴀᴡɴ ᴡᴀɪғᴜs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛs ғᴏʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴜsᴇʀs ᴛᴏ ᴀᴛᴛᴀɪɴ ᴛʜᴇᴍ. 😍
 
-***I am An Open Source Character Catcher Bot...​Add Me in Your group.. And I will send Random Characters After.. every 100 messages in Group... Use /guess to.. Collect that Characters in Your Collection.. and see Collection by using /Harem... So add in Your groups and Collect Your harem***
-        """
+⌥ ʜᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ? 🧐
+▸ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛs ᴀɴᴅ ᴄʟɪᴄᴋ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs. 🤗
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+         """
         
         keyboard = [
-            [InlineKeyboardButton("ADD ME", url=f'http://t.me/{BOT_USERNAME}?startgroup=new')],
-            [InlineKeyboardButton("SUPPORT", url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton("UPDATES", url=f'https://t.me/{UPDATE_CHAT}')],
-            [InlineKeyboardButton("HELP", callback_data='help')]
-             ]
+            [InlineKeyboardButton("🪄 ᴧᴅᴅ ᴍᴇ ɪɴ ʏ𑄝ᴜꝛ ɢꝛ𑄝ᴜᴘs 🪄", url=f'http://t.me/{BOT_USERNAME}?startgroup=new')],
+            [InlineKeyboardButton("✨ sᴜᴘᴘ𑄝ʀᴛ ✨", url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton("❄️ ᴜᴘᴅᴧᴛᴇs ❄️", url=f'https://t.me/{UPDATE_CHAT}')],
+            [InlineKeyboardButton("🧿 ʜᴇʟᴘ 🧿", callback_data='help'),
+            [InlineKeyboardButton("",url=f'https://t.me/{Rulers_Bots}')]
+             
         reply_markup = InlineKeyboardMarkup(keyboard)
         photo_url = random.choice(PHOTO_URL)
 
