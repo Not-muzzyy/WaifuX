@@ -73,15 +73,15 @@ async def button(update: Update, context: CallbackContext) -> None:
         help_text = """
     Hᴇʟᴘ Sᴇᴄᴛɪᴏɴ:
     
-/attain: Tᴏ Gᴜᴇss ᴄʜᴀʀᴀᴄᴛᴇʀ (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs)
-/fav : Aᴅᴅ Yᴏᴜʀ ғᴀᴠ
-/trade : Tᴏ ᴛʀᴀᴅᴇ Cʜᴀʀᴀᴄᴛᴇʀs
-/gift : Gɪᴠᴇ ᴀɴʏ Cʜᴀʀᴀᴄᴛᴇʀ ғʀᴏᴍ Yᴏᴜʀ Cᴏʟʟᴇᴄᴛɪᴏɴ ᴛᴏ ᴀɴᴏᴛʜᴇʀ ᴜsᴇʀ.. (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs)
+/attain: Tᴏ Aᴛᴛᴀɪɴ Cʜᴀʀᴀᴄᴛᴇʀ (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs)
+/fav : Aᴅᴅ Yᴏᴜʀ Fᴀᴠ
+/trade : Tᴏ Tʀᴀᴅᴇ Cʜᴀʀᴀᴄᴛᴇʀs
+/gift : Gɪᴠᴇ Aɴʏ Cʜᴀʀᴀᴄᴛᴇʀ Fʀᴏᴍ Yᴏᴜʀ Cᴏʟʟᴇᴄᴛɪᴏɴ Tᴏ Aɴᴏᴛʜᴇʀ Usᴇʀ.. (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs)
 /collection : Tᴏ Sᴇᴇ Yᴏᴜʀ Cᴏʟʟᴇᴄᴛɪᴏɴ
 /topgroups : Sᴇᴇ Tᴏᴘ Gʀᴏᴜᴘs.. Pᴘʟ Gᴜᴇssᴇs Mᴏsᴛ ɪɴ ᴛʜᴀᴛ Gʀᴏᴜᴘs
 /top : Tᴏᴏ Sᴇᴇ Tᴏᴘ Usᴇʀs
 /ctop : Yᴏᴜʀ CʜᴀᴛTᴏᴘ
-/changetime : Cʜᴀɴɢᴇ Cʜᴀʀᴀᴄᴛᴇʀ ᴀᴘᴘᴇᴀʀ ᴛɪᴍᴇ (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ Gʀᴏᴜᴘs)
+/changetime : Cʜᴀɴɢᴇ Cʜᴀʀᴀᴄᴛᴇʀ Sᴘᴀᴡɴ Tɪᴍᴇ (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs)
    """
         help_keyboard = [[InlineKeyboardButton("⤾ Bᴀᴄᴋ", callback_data='back')]]
         reply_markup = InlineKeyboardMarkup(help_keyboard)
