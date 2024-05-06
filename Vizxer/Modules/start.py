@@ -1,7 +1,7 @@
 import random
 from html import escape 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
-from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, MessageHandler, Filters
+from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, MessageHandler, filters
 
 from Vizxer import application, PHOTO_URL, SUPPORT_CHAT, UPDATE_CHAT, BOT_USERNAME, db, GROUP_ID
 from Vizxer import pm_users as collection 
@@ -99,7 +99,7 @@ async def button(update: Update, context: CallbackContext) -> None:
 
         await context.bot.edit_message_caption(chat_id=update.effective_chat.id, message_id=query.message.message_id, caption=caption, reply_markup=reply_markup, parse_mode='markdown')
 
-private_message_handler = MessageHandler(Filters.private, start)
+private_message_handler = MessageHandler(filters.private, start)
 application.add_handler(private_message_handler)
 application.add_handler(CallbackQueryHandler(button, pattern='^help$|^back$', block=False))
 start_handler = CommandHandler('start', start, block=False)
