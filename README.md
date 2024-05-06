@@ -8,7 +8,7 @@ Format:
 ```
 #### Example: 
 ```
-/upload Img_url muzan-kibutsuji Demon-slayer 3
+/upload Img_url Hinata-Hyuga Naruto/Naruto-Shippuden/Boruto 3
 ```
 
 
