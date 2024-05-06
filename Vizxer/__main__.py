@@ -237,7 +237,7 @@ async def fav(update: Update, context: CallbackContext) -> None:
 def main() -> None:
     """Run bot."""
 
-    application.add_handler(CommandHandler(["obtain", "protecc", "collect", "grab", "hunt"], guess, block=False))
+    application.add_handler(CommandHandler(["obtain", "protecc", "collect", "grab", "hunt", "attain", "get"], guess, block=False))
     application.add_handler(CommandHandler("fav", fav, block=False))
     application.add_handler(MessageHandler(filters.ALL, message_counter, block=False))
 
