@@ -6,8 +6,9 @@ from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 
 from Vizxer import application, db
 from Vizxer import pm_users as collection
-from Vizxer import SUPPORT_CHAT, SUPPORT_CHAT as SUPPORT_CHANNEL, BOT_USERNAME, CHARA_CHANNEL_ID as LOGGER_ID, OWNER_USERNAME
+from Vizxer import SUPPORT_CHAT, SUPPORT_CHAT as SUPPORT_CHANNEL, BOT_USERNAME, CHARA_CHANNEL_ID as LOGGER_ID
 
+OWNER_USERNAME = "tanjiro_x_coder"
 
 IMG_URL = [
     "https://telegra.ph/file/d1f294924efee2878bfab.jpg",
