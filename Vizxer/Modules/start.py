@@ -66,9 +66,7 @@ async def start(update: Update, context: CallbackContext) -> None:
         await context.bot.send_photo(chat_id=update.effective_chat.id, photo=photo_url, caption="👋 ʜᴇʏ {Name},
 ɪ'ᴍ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ғᴏʀ ʏᴏᴜ ʙᴀʙᴇ. 💕
 
-⌥ ᴄʟɪᴄᴋ ᴏɴ ғᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴ & ᴄᴏɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
-
-❍ ᴜᴘᴛɪᴍᴇ ➛ {Uptime} ",reply_markup=reply_markup )
+⌥ ᴄʟɪᴄᴋ ᴏɴ ғᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴ & ᴄᴏɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.",reply_markup=reply_markup )
 
 async def button(update: Update, context: CallbackContext) -> None:
     query = update.callback_query
