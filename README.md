@@ -26,7 +26,7 @@ use Rarity Number accordingly rarity Map
 | 1 | 🔘 Common|
 
 ## USER COMMANDS
-- `/attain` - Guess the character
+- `/attain` - Attain the character
 - `/fav` - Add a character to favorites
 - `/trade` - Trade a character with another user
 - `/gift` - Gift a character to another user
