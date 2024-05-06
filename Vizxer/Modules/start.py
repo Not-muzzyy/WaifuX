@@ -49,7 +49,7 @@ async def start(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("🪄 ᴄ𑄝ɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ 🪄", url=f'http://t.me/{BOT_USERNAME}?start')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        caption = f"""👋 ʜᴇʏ{first_name}, \nɪ'ᴍ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ғᴏʀ ʏᴏᴜ ʙᴀʙᴇ. 💕\n⌥ ᴄʟɪᴄᴋ ᴏɴ ғᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴ & ᴄᴏɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ."""
+        caption = f"""👋 ʜᴇʏ{first_name}, \nɪ'ᴍ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ғᴏʀ ʏᴏᴜ ʙᴀʙᴇ. 💕\n\n⌥ ᴄʟɪᴄᴋ ᴏɴ ғᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴ & ᴄᴏɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ."""
         await context.bot.send_photo(chat_id=update.effective_chat.id, photo=photo_url, caption=caption, reply_markup=reply_markup)
 
 async def button(update: Update, context: CallbackContext) -> None:
