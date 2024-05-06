@@ -78,9 +78,9 @@ async def button(update: Update, context: CallbackContext) -> None:
 /trade : Tᴏ Tʀᴀᴅᴇ Cʜᴀʀᴀᴄᴛᴇʀs
 /gift : Gɪᴠᴇ Aɴʏ Cʜᴀʀᴀᴄᴛᴇʀ Fʀᴏᴍ Yᴏᴜʀ Cᴏʟʟᴇᴄᴛɪᴏɴ Tᴏ Aɴᴏᴛʜᴇʀ Usᴇʀ.. (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs)
 /collection : Tᴏ Sᴇᴇ Yᴏᴜʀ Cᴏʟʟᴇᴄᴛɪᴏɴ
-/topgroups : Sᴇᴇ Tᴏᴘ Gʀᴏᴜᴘs.. Pᴘʟ Gᴜᴇssᴇs Mᴏsᴛ ɪɴ ᴛʜᴀᴛ Gʀᴏᴜᴘs
+/topgroups : Sᴇᴇ Tᴏᴘ Gʀᴏᴜᴘs Wʜᴇʀᴇ Usᴇʀs Aᴛᴛᴀɪɴs Mᴏsᴛ Iɴ Tʜᴀᴛ Gʀᴏᴜᴘ
 /top : Tᴏᴏ Sᴇᴇ Tᴏᴘ Usᴇʀs
-/ctop : Yᴏᴜʀ CʜᴀᴛTᴏᴘ
+/ctop : Yᴏᴜʀ Cʜᴀᴛ Tᴏᴘ
 /changetime : Cʜᴀɴɢᴇ Cʜᴀʀᴀᴄᴛᴇʀ Sᴘᴀᴡɴ Tɪᴍᴇ (ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs)
    """
         help_keyboard = [[InlineKeyboardButton("⤾ Bᴀᴄᴋ", callback_data='back')]]
@@ -91,18 +91,23 @@ async def button(update: Update, context: CallbackContext) -> None:
     elif query.data == 'back':
 
         caption = f"""
-        ***Hoyyyy...*** ✨
+        🦋 ɢʀᴇᴇᴛɪɴɢs (name) , ɪ'ᴍ {BOT_NAME} , ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ!💞
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+⌥ ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ ? 🤔
+▸ ɪ ᴄᴀɴ sᴘᴀᴡɴ ᴡᴀɪғᴜs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛs ғᴏʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴜsᴇʀs ᴛᴏ ᴀᴛᴛᴀɪɴ ᴛʜᴇᴍ. 😍
 
-***I am An Open Source Character Catcher Bot..​Add Me in Your group.. And I will send Random Characters After.. every 100 messages in Group... Use /guess to.. Collect that Characters in Your Collection.. and see Collection by using /Harem... So add in Your groups and Collect Your harem***
-        """
-
+⌥ ʜᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ? 🧐
+▸ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛs ᴀɴᴅ ᴄʟɪᴄᴋ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟs. 🤗
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+         """
         
         keyboard = [
-            [InlineKeyboardButton("ADD ME", url=f'http://t.me/{BOT_USERNAME}?startgroup=new')],
-            [InlineKeyboardButton("SUPPORT", url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton("UPDATES", url=f'https://t.me/{UPDATE_CHAT}')],
-            [InlineKeyboardButton("HELP", callback_data='help')]
-    ]
+            [InlineKeyboardButton("🪄 ᴧᴅᴅ ᴍᴇ ɪɴ ʏ𑄝ᴜꝛ ɢꝛ𑄝ᴜᴘs 🪄", url=f'http://t.me/{BOT_USERNAME}?startgroup=new')],
+            [InlineKeyboardButton("✨ sᴜᴘᴘ𑄝ʀᴛ ✨", url=f'https://t.me/{SUPPORT_CHAT}'),
+            InlineKeyboardButton("❄️ ᴜᴘᴅᴧᴛᴇs ❄️", url=f'https://t.me/{UPDATE_CHAT}')],
+            [InlineKeyboardButton("🧿 ʜᴇʟᴘ 🧿", callback_data='help'),
+            InlineKeyboardButton("👨🏻‍💻 ᴍᴧɪɴᴛᴇɴᴧɴᴇʀs 👨🏻‍💻",url=f'https://t.me/Rulers_Bots/1')]
+                ]
         reply_markup = InlineKeyboardMarkup(keyboard)
 
         await context.bot.edit_message_caption(chat_id=update.effective_chat.id, message_id=query.message.message_id, caption=caption, reply_markup=reply_markup, parse_mode='markdown')
