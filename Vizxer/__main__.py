@@ -100,7 +100,7 @@ async def send_image(update: Update, context: CallbackContext) -> None:
     await context.bot.send_photo(
         chat_id=chat_id,
         photo=character['img_url'],
-        caption=f"""𝗔 𝗡𝗲𝘄 𝗪𝗮𝗶𝗳𝘂:- {character['rarity']} 𝗛𝗮𝘀 𝗕𝗲𝗲𝗻 𝗔𝗽𝗽𝗲𝗮𝗿𝗲𝗱\n/obtain  Mʏ ɴᴀᴍᴇ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ʜᴀʀᴇᴍ sᴇɴᴘᴀɪ""",
+        caption=f"""𝗔 𝗡𝗲𝘄 𝗪𝗮𝗶𝗳𝘂:- {character['rarity']} 𝗛𝗮𝘀 𝗕𝗲𝗲𝗻 𝗔𝗽𝗽𝗲𝗮𝗿𝗲𝗱\n/attain  Mʏ ɴᴀᴍᴇ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ʜᴀʀᴇᴍ sᴇɴᴘᴀɪ""",
         parse_mode='Markdown')
 
 
