@@ -25,7 +25,7 @@ async def start(update: Update, context: CallbackContext) -> None:
 
     if update.effective_chat.type == "private":
         caption = f"""
-        🦋 ɢʀᴇᴇᴛɪɴɢs {first_name}, ɪ'ᴍ {BOT_NAME} , ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ!💞
+        🦋 ɢʀᴇᴇᴛɪɴɢs {first_name}, ɪ'ᴍ {BOT_USERNAME} , ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ!💞
         ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
         ⌥ ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ ? 🤔
         ▸ ɪ ᴄᴀɴ sᴘᴀᴡɴ ᴡᴀɪғᴜs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛs ғᴏʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴜsᴇʀs ᴛᴏ ᴀᴛᴛᴀɪɴ ᴛʜᴇᴍ. 😍
@@ -42,7 +42,6 @@ async def start(update: Update, context: CallbackContext) -> None:
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         photo_url = random.choice(PHOTO_URL)
-
         await context.bot.send_photo(chat_id=update.effective_chat.id, photo=photo_url, caption=caption, reply_markup=reply_markup, parse_mode='markdown')
     else:
         photo_url = random.choice(PHOTO_URL)
@@ -50,7 +49,7 @@ async def start(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("🪄 ᴄ𑄝ɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ 🪄", url=f'http://t.me/{BOT_USERNAME}?start')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        await context.bot.send_photo(chat_id=update.effective_chat.id, photo=photo_url, caption="👋 ʜᴇʏ {first_name}, ɪ'ᴍ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ғᴏʀ ʏᴏᴜ ʙᴀʙᴇ. 💕⌥ ᴄʟɪᴄᴋ ᴏɴ ғᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴ & ᴄᴏɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.",reply_markup=reply_markup )
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo=photo_url, caption=f"👋 ʜᴇʏ {first_name}, ɪ'ᴍ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ғᴏʀ ʏᴏᴜ ʙᴀʙᴇ. 💕⌥ ᴄʟɪᴄᴋ ᴏɴ ғᴏʟʟᴏᴡɪɴɢ ʙᴜᴛᴛᴏɴ & ᴄᴏɴɴᴇᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.", reply_markup=reply_markup)
 
 async def button(update: Update, context: CallbackContext) -> None:
     query = update.callback_query
@@ -76,7 +75,7 @@ async def button(update: Update, context: CallbackContext) -> None:
 
     elif query.data == 'back':
         caption = f"""
-        🦋 ɢʀᴇᴇᴛɪɴɢs {first_name}, ɪ'ᴍ {BOT_NAME} , ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ!💞
+        🦋 ɢʀᴇᴇᴛɪɴɢs {first_name}, ɪ'ᴍ {BOT_USERNAME} , ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ!💞
         ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
         ⌥ ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ ? 🤔
         ▸ ɪ ᴄᴀɴ sᴘᴀᴡɴ ᴡᴀɪғᴜs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛs ғᴏʀ ɢʀᴏᴜᴘ ᴄʜᴀᴛ ᴜsᴇʀs ᴛᴏ ᴀᴛᴛᴀɪɴ ᴛʜᴇᴍ. 😍
